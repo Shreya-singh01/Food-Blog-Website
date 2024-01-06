@@ -1,0 +1,232 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height :59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+
+}
+
+/* Logo and Image */
+#logo{
+    margin: 8px 14px;
+
+
+}
+
+#logo img{
+    height: 70px;
+    margin: 5px 4px;
+
+}
+
+/* List styling */
+
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:100% ;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px; 
+    height: 550px; 
+    align-items: center;
+    justify-content: center;
+}
+
+#Home::before {
+    content: "";
+    background: url("bg2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.8;
+    margin: auto;
+}
+#Home h1{
+    /* color:rgb(35, 2, 25); */
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+}
+#Home p{
+    color:white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+/* Services-Section */
+#services{
+    display: flex;
+    margin: 25px;
+    /* margin-top: 13%; */
+}
+
+#services .box{
+    border: 2px solid white;
+    padding: 34px;
+    margin: 3px 25px;
+    border-radius: 35px;
+    background: #fff8f8;
+    border: 1px solid brown;
+}
+#services .box img{
+    height:150px;
+    display: block;
+    margin:auto;
+}
+#services .box p{
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+/* Client Section    */
+#client-section{
+    /* height:344px; */
+}
+#client-section::before{
+    content: "";
+    /* background: url("bg1.jpg") no-repeat center center/cover; */
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    /* top:0px;
+    left:0px; */
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client-item{
+    padding: 5px;
+}
+#clients img{
+   height:210px;
+   /* padding: 15px; */
+    
+}
+/* contact-section */
+#contact{
+    position: relative;
+    margin-top:34px;
+    margin-bottom:5px ;
+}
+#contact::before{
+    content: "";
+    background: url("contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* top:0px;
+    left:0px; */
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, #contact-box textarea{
+    width:100%;
+    padding:5px;
+    border-radius: 9px;
+    font-size:1.1rem;
+}
+#contact-box form{
+    width:45%;
+}
+#contact-box label{
+    font-size:1.2rem;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+footer{
+    background: #000;
+    color: white;
+    padding:9px 20px;
+}
+/* Ultility classes */
+.h-primary{
+    font-size:4rem;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    padding: 2px;
+    /* color: white; */
+}
+.h-secondary{
+    font-size:2rem;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    padding: 12px;
+}
+.btn{
+    padding:6px 20px ;
+    background-color:brown;
+    border:2px solid white;
+    color:white;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
